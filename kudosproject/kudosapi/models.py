@@ -12,5 +12,6 @@ class Kudos(models.Model):
     message = models.CharField(max_length=200)
     to_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='to_user')
     from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='from_user')
+    created = models.DateTimeField(auto_now_add=True)
 
 

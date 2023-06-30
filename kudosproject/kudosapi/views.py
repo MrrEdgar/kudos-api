@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from .serializer import UserSerializer, KudosSerializer
 from .models import User, Kudos
+from rest_framework.decorators import api_view
 
 # Create your views here.
 
